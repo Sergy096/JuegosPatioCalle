@@ -11,7 +11,7 @@
 	max-width:900px;
 	text-align: justify;
 	padding: 10px 15px;
-	background: #80b3ff;	
+	background: #80b3ff;
 }
 
 .contenido h1 {
@@ -47,7 +47,7 @@
 		max-width:900px;
 		text-align: justify;
 		padding: 10px 15px;
-		background: #80b3ff;	
+		background: #80b3ff;
 	}
 	.botont {
 		/*boton PDF*/
@@ -80,7 +80,7 @@ li {
     	text-align: center;
 	font-size: 1.5em;
     	padding: 10px 30px 10px 30px;
-    	
+
 }
 
 #casa {
@@ -156,10 +156,16 @@ li {
 }
 
 .menu-flecha:hover .contenido-menu {
-	display: block;		
+	display: block;
 }
 
 .show {display:block;}
+
+@media only screen and (min-width: 700px){
+  .contenido-menu {
+  	display:block;
+  }
+}
 
 /*------------tarjetas----------------*/
 .tarjeta {
@@ -171,7 +177,7 @@ li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 	background:white;
-} 
+}
 
 
 .contenedor {
@@ -199,7 +205,7 @@ li {
 		background:white;
 		cursor: pointer;
 		transition: all 0.7s ease;
-} 
+}
 }
 
 @media only screen and (min-width: 500px){
@@ -221,20 +227,20 @@ li {
 .contenedor-video {
     	width: 320px;
 	height: 180px;
-} 
+}
 
 @media only screen and (min-width: 450px){
     	.contenedor-video {
     		width: 426px;
 		height: 240px;
-	} 
+	}
 }
 
 @media only screen and (min-width: 700px){
     	.contenedor-video {
     		width: 640px;
 		height: 360px;
-	} 
+	}
 }
 
 /*-----------Imagen grande--------------------*/
@@ -284,7 +290,7 @@ li {
 }
 
 /* Add Animation */
-.modal-content, #caption {    
+.modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -292,12 +298,12 @@ li {
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
 
 @keyframes zoom {
-    from {transform: scale(0.1)} 
+    from {transform: scale(0.1)}
     to {transform: scale(1)}
 }
 
