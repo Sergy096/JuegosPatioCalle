@@ -27,7 +27,6 @@
 .botont {
 	/*boton PDF*/
 	display:inline-block;
-	float: right;
 	position: fixed;
 	bottom: 0px;
 	padding:14px 16px;
@@ -39,7 +38,7 @@
 }
 
 #pdf {
-	left:60px;
+	left:100px;
 }
 
 .botont:hover {
