@@ -132,7 +132,7 @@ li {
 .contenido-menu {
 	display:none;
 	position:absolute;
-	top:42px;
+	top:40px;
 	right:0px;
 	min-width: 160px;
 	background: #303030;
@@ -163,7 +163,7 @@ li {
 
 .show {display:block;}
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1200px){
   .contenido-menu {
   	display:block;
   }
