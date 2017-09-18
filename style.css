@@ -89,7 +89,7 @@ li {
 	padding:10px;
 	right:48px;
 	color:white;
-	font-size:28px
+	font-size:24px
 }
 
 #casa-active {
@@ -98,7 +98,7 @@ li {
 	padding:10px;
 	right:48px;
 	color:#007acc;
-	font-size:28px
+	font-size:24px
 }
 
 #casa:hover {
@@ -115,7 +115,7 @@ li {
   	position:absolute;
 	right:0px;
 	color:white;
-	font-size:48px;
+	font-size:42px;
 }
 #flecha:hover {
   	cursor:pointer;
@@ -217,9 +217,20 @@ li {
   		padding: 8px 0px 20px 0px;
 	}
 	#pagina {
-	font-size: 1.5em;
-	padding: 10px 30px 10px 30px;
+		font-size: 1.5em;
+		padding: 10px 30px 10px 30px;
 	}
+	#casa {
+		font-size:28px
+	}
+
+	#casa-active {
+		font-size:28px
+	}
+	#flecha {
+		font-size:48px;
+	}
+
 }
 
 .tarjeta img{
