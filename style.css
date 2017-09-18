@@ -1,0 +1,327 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+* {
+  margin:0;
+}
+
+.contenido {
+	margin:auto;
+	max-width:900px;
+	text-align: justify;
+	padding: 10px 15px;
+	background: #80b3ff;	
+}
+
+.contenido h1 {
+	font-size: 3.2em;
+	margin: 0px 0px 20px 0px;
+	text-align: left;
+}
+
+.contenido p {
+	margin: 5px 0px;
+}
+
+.botont {
+	/*boton PDF*/
+	display:inline-block;
+	float:right;
+	padding:14px 16px;
+	margin: 20px 5px 5px 10px;
+	color: white;
+    	text-decoration: none;
+	background: #303030;
+	text-align: center;
+}
+
+
+.botont:hover {
+	background: #424242;
+}
+
+@media only screen and (min-width: 700px){
+	.contenido {
+		margin:auto;
+		max-width:900px;
+		text-align: justify;
+		padding: 10px 15px;
+		background: #80b3ff;	
+	}
+	.botont {
+		/*boton PDF*/
+		display:inline-block;
+		float:none;
+		position: relative;
+		margin: 20px 10px 0px 20px;
+	}
+}
+
+/*------------barra superior-----------------*/
+ul {
+    	list-style-type: none;
+	width:100%;
+   	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #212121;
+}
+
+li {
+	margin: 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#pagina {
+	float:left;
+	color: white;
+    	text-align: center;
+	font-size: 1.5em;
+    	padding: 10px 30px 10px 30px;
+    	
+}
+
+#casa {
+  	position:absolute;
+	top:0px;
+	padding:10px;
+	right:48px;
+	color:white;
+	font-size:28px
+}
+
+#casa-active {
+  	position:absolute;
+	top:0px;
+	padding:10px;
+	right:48px;
+	color:#007acc;
+	font-size:28px
+}
+
+#casa:hover {
+  	cursor:pointer;
+	background: #303030;
+}
+
+#casa-active:hover {
+  	cursor:pointer;
+	background: #303030;
+}
+
+#flecha {
+  	position:absolute;
+	right:0px;
+	color:white;
+	font-size:48px;
+}
+#flecha:hover {
+  	cursor:pointer;
+	background: #303030;
+}
+
+.menu-flecha {
+	float:right;
+	display:inline-block;
+}
+
+.contenido-menu {
+	display:none;
+	position:absolute;
+	top:48px;
+	right:0px;
+	min-width: 160px;
+	background: #303030;
+}
+
+.contenido-menu a {
+	color: white;
+    	padding: 9px 16px;
+    	text-decoration: none;
+	display: block;
+}
+
+.contenido-menu a.contenido-menu-active {
+	color: white;
+    	padding: 9px 16px;
+    	text-decoration: none;
+	display: block;
+	background: #007acc;
+}
+
+.contenido-menu a:hover:not(.contenido-menu-active) {
+	background: #424242;
+}
+
+.menu-flecha:hover .contenido-menu {
+	display: block;		
+}
+
+.show {display:block;}
+
+/*------------tarjetas----------------*/
+.tarjeta {
+    	float: left;
+    	margin: 20px 10px 20px 10px;
+    	padding: 0px;
+    	width: 94%;
+   	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+	background:white;
+} 
+
+
+.contenedor {
+  	padding: 7px 0px 18px 0px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 700px){
+    	.tarjeta {
+        	width: 300px;
+		height: 250px;
+		margin: 20px -10px 0px 20px;
+   	 }
+	.contenedor {
+  		padding: 0;
+	}
+
+	.tarjeta:hover {
+    		padding: 0px;
+		z-index:1;
+    		width: 315px;
+   		border: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;
+		background:white;
+		cursor: pointer;
+		transition: all 0.7s ease;
+} 
+}
+
+@media only screen and (min-width: 500px){
+    	.tarjeta {
+       		max-width: 45%;
+		margin: 20px -10px 0px 20px;
+    	}
+	.contenedor {
+  		padding: 8px 0px 20px 0px;
+	}
+}
+
+.tarjeta img{
+	width:100%;
+}
+
+/*------------video----------------*/
+
+.contenedor-video {
+    	width: 320px;
+	height: 180px;
+} 
+
+@media only screen and (min-width: 450px){
+    	.contenedor-video {
+    		width: 426px;
+		height: 240px;
+	} 
+}
+
+@media only screen and (min-width: 700px){
+    	.contenedor-video {
+    		width: 640px;
+		height: 360px;
+	} 
+}
+
+/*-----------Imagen grande--------------------*/
+#imagen-grande {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#imagen-grande:hover {
+	opacity: 0.8;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
