@@ -79,7 +79,7 @@ li {
 	color: white;
     	text-align: center;
 	font-size: 1.2em;
-    	padding: 10px 30px 10px 30px;
+    	padding: 10px 30px 10px 10px;
 
 }
 
@@ -161,7 +161,7 @@ li {
 
 .show {display:block;}
 
-@media only screen and (min-width: 1800px){
+@media only screen and (min-width: 1700px){
   .contenido-menu {
   	display:block;
   }
@@ -218,6 +218,7 @@ li {
 	}
 	#pagina {
 	font-size: 1.5em;
+	padding: 10px 30px 10px 30px;
 	}
 }
 
