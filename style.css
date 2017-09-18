@@ -168,7 +168,7 @@ li {
 
 .show {display:block;}
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1400px){
   .contenido-menu {
   	display:block;
   }
