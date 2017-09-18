@@ -104,11 +104,13 @@ li {
 #casa:hover {
   	cursor:pointer;
 	background: #303030;
+	padding: 0px;
 }
 
 #casa-active:hover {
   	cursor:pointer;
 	background: #303030;
+	padding: 0px;
 }
 
 #flecha {
