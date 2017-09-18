@@ -15,8 +15,8 @@
 }
 
 .contenido h1 {
-	font-size: 3.2em;
-	margin: 0px 0px 20px 0px;
+	font-size: 2.2em;
+	margin: 30px 0px 20px 0px;
 	text-align: left;
 }
 
@@ -27,8 +27,8 @@
 .botont {
 	/*boton PDF*/
 	display:inline-block;
-  position:fixed;
-  bottom:0px;
+	position: fixed;
+	bottom: 0px;
 	padding:14px 16px;
 	margin: 20px 5px 5px 10px;
 	color: white;
@@ -79,8 +79,8 @@ li {
 	float:left;
 	color: white;
     	text-align: center;
-	font-size: 1.5em;
-    	padding: 10px 30px 10px 30px;
+	font-size: 1.2em;
+    	padding: 10px 30px 10px 10px;
 
 }
 
@@ -90,7 +90,7 @@ li {
 	padding:10px;
 	right:48px;
 	color:white;
-	font-size:28px
+	font-size:22px
 }
 
 #casa-active {
@@ -99,7 +99,7 @@ li {
 	padding:10px;
 	right:48px;
 	color:#007acc;
-	font-size:28px
+	font-size:22px
 }
 
 #casa:hover {
@@ -116,7 +116,7 @@ li {
   	position:absolute;
 	right:0px;
 	color:white;
-	font-size:48px;
+	font-size:42px;
 }
 #flecha:hover {
   	cursor:pointer;
@@ -131,7 +131,7 @@ li {
 .contenido-menu {
 	display:none;
 	position:absolute;
-	top:48px;
+	top:40px;
 	right:0px;
 	min-width: 160px;
 	background: #303030;
@@ -162,7 +162,7 @@ li {
 
 .show {display:block;}
 
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 1200px){
   .contenido-menu {
   	display:block;
   }
@@ -216,6 +216,26 @@ li {
     	}
 	.contenedor {
   		padding: 8px 0px 20px 0px;
+	}
+	#pagina {
+		font-size: 1.5em;
+		padding: 10px 30px 10px 30px;
+	}
+	#casa {
+		font-size:28px
+	}
+
+	#casa-active {
+		font-size:28px
+	}
+	#flecha {
+		font-size:48px;
+	}
+	.contenido-menu {
+		top:47px;
+	}
+	.contenido h1 {
+		font-size: 3.2em;
 	}
 }
 
