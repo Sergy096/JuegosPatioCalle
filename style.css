@@ -28,6 +28,7 @@
 	/*boton PDF*/
 	display:inline-block;
 	position: fixed;
+	margin: 0 10 0 0;
 	bottom: 0px;
 	padding:14px 16px;
 	margin: 20px 5px 5px 10px;
