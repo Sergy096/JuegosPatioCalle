@@ -38,6 +38,9 @@
 	text-align: center;
 }
 
+#pdf {
+	left:30px;
+}
 
 .botont:hover {
 	background: #424242;
