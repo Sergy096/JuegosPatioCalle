@@ -17,10 +17,8 @@
 <li class="menu-flecha">
 	<i class="material-icons" id="flecha" >arrow_drop_down</i>
 		<div id="contenido-menu-b" class="contenido-menu">
-      <form>
-  <input type="text" name="search" placeholder="Search..">
-</form>
-			<a href="/JuegosPatioCalle/juegos/alarueda.html">A la rueda de la alcachofa</a>
+      <input type="text" id="elementobuscado" onkeyup="busqueda()" placeholder="Search for names..">
+			  <a href="/JuegosPatioCalle/juegos/alarueda.html">A la rueda de la alcachofa</a>
     		<a href="/JuegosPatioCalle/juegos/alaunamimula.html">A la una mi mula</a>
     		<a href="/JuegosPatioCalle/juegos/aseguirla.html">A seguirla</a>
     		<a href="/JuegosPatioCalle/juegos/abuelita.html">Abuelita, abuelita ¿qué hora es?</a>
@@ -224,6 +222,27 @@ document.getElementById("flecha").onclick = function() {myFunction()};
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
     document.getElementById("contenido-menu-b").classList.toggle("show");
+}
+</script>
+
+<script>
+function busqueda() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('elementobuscado');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("contenido-menu-b");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
 }
 </script>
 
